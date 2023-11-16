@@ -25,4 +25,13 @@ public class Matrix {
     }
     System.out.println();
   }
+
+  public void populateMatrix() {
+    int count = 1;
+    for (int i = 0; i < matrix.length; i++) {
+      for (int j = 0; j < matrix[i].length; j++) {
+        matrix[i][j] = count++;
+      }
+    }
+  }
 }
