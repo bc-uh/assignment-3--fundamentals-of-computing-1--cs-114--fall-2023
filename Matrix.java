@@ -16,9 +16,9 @@ public class Matrix {
     for (int row = 0; row < matrix.length; row++) {
       for (int column = 0; column < matrix[row].length; column++) {
         if (row + column == matrix.length - 1) {
-          System.out.print("\033[33m" + matrix[row][column] + " \033[0m");
+          System.out.print("\033[33m" + matrix[row][column] + "\t\033[0m");
         } else {
-          System.out.print(matrix[row][column] + " ");
+          System.out.print(matrix[row][column] + "\t");
         }
       }
       System.out.println();
@@ -29,7 +29,7 @@ public class Matrix {
   public void populateMatrix() {
     int count = 1;
     for (int row = 0; row < matrix.length; row++) {
-      for (int column = 0; column < matrix[column].length; column++) {
+      for (int column = 0; column < matrix[row].length; column++) {
         matrix[row][column] = count++;
       }
     }
