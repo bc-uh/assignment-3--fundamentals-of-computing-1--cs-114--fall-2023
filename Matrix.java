@@ -28,9 +28,9 @@ public class Matrix {
 
   public void populateMatrix() {
     int count = 1;
-    for (int i = 0; i < matrix.length; i++) {
-      for (int j = 0; j < matrix[i].length; j++) {
-        matrix[i][j] = count++;
+    for (int row = 0; row < matrix.length; row++) {
+      for (int column = 0; column < matrix[column].length; column++) {
+        matrix[row][column] = count++;
       }
     }
   }
