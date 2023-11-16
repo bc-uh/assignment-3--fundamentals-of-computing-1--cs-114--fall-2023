@@ -34,4 +34,14 @@ public class Matrix {
       }
     }
   }
+
+  public void flipMatrix() {
+    for (int row = 0; row < matrix.length; row++) {
+      for (int column = 0; column < matrix[row].length; column++) {
+        if (row + column < matrix.length - 1) {
+          swap(row, column, matrix.length - 1 - column, matrix.length - 1 - row);
+        }
+      }
+    }
+  }
 }
